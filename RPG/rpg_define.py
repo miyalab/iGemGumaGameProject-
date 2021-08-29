@@ -26,6 +26,8 @@ COLOR_WHITE: tuple = (255,255,255)
 COLOR_RED: tuple = (255,0,0)
 COLOR_GREEN: tuple = (0,255,0)
 COLOR_BLUE: tuple = (0,0,255)
+COLOR_ORANGE: tuple = (253,126,0)
+
 
 #----------------------------
 # key

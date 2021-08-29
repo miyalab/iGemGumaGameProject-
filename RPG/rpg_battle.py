@@ -67,7 +67,7 @@ def EnemyRead(_enemy: int) -> idef.enemy:
         enemyData.LUK = 100
         enemyData.EXP = 1000
 
-        backgroundImg = pygame.image.load("img/battle/background/rouka.png")
+        backgroundImg = pygame.image.load("img/battle/background/BG16b_80.jpg")
 
     elif _enemy == 2:
         enemyData.Num = 2
@@ -260,14 +260,14 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
             # wait command secelt
             if(key[pygame.locals.K_1] == 1):
                 idef.MessageSet(str(user.Name) + "の攻撃")
-                damage = user.ATK - enemyA.DEF + random.randint(0, 30)
+                damage = int(user.ATK - enemyA.DEF + random.randint(0, 30))
                 if damage < 0: damage = 0
                 if damage > 9999: damage = 9999
                 scene = 21
                 timer = 0
             elif(key[pygame.locals.K_2] == 1 and len(user.Command)>=2) and user.MP >= 10:
                 idef.MessageSet(str(user.Name) + "の" + user.Command[1] + "による攻撃")
-                damage = user.ATK * 1.2 - enemyA.DEF + random.randint(0, 50)
+                damage = int(user.ATK * 1.2 - enemyA.DEF + random.randint(0, 50))
                 if damage < 0: damage = 0
                 if damage > 9999: damage = 9999
                 user.MP = user.MP - 10
@@ -275,7 +275,7 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
                 timer = 0
             elif(key[pygame.locals.K_3] == 1 and len(user.Command)>=3) and user.MP >= 20:
                 idef.MessageSet(str(user.Name) + "の" + user.Command[2] + "による攻撃")
-                damage = user.ATK * 1.5 - enemyA.DEF + random.randint(0, 100)
+                damage = int(user.ATK * 1.5 - enemyA.DEF + random.randint(0, 100))
                 if damage < 0: damage = 0
                 if damage > 9999: damage = 9999
                 user.MP = user.MP - 20
@@ -283,7 +283,7 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
                 timer = 0
             elif(key[pygame.locals.K_4] == 1 and len(user.Command)>=4) and user.MP >= 30:
                 idef.MessageSet(str(user.Name) + "の" + user.Command[3] + "による攻撃")
-                damage = user.ATK * 2.0 - enemyA.DEF + random.randint(0, 150)
+                damage = int(user.ATK * 2.0 - enemyA.DEF + random.randint(0, 150))
                 if damage < 0: damage = 0
                 if damage > 9999: damage = 9999
                 user.MP = user.MP - 30
@@ -293,8 +293,9 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
         # [1] 攻撃エフェクト
         elif scene == 21:
             idef.MessageDraw(scr, messageFont)
-            if 2 <= timer and timer <= 4:
-                scr.blit(effectImg, [400-timer*60, -100+timer*60])
+            if 2 == timer or timer == 4:
+                scr.fill(idef.COLOR_WHITE)
+                #scr.blit(effectImg, [400-timer*60, -100+timer*60])
 
             if timer == 5:
                 enemyBlink = 5
@@ -310,8 +311,9 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
         # [2] コマンドエフェクト
         elif scene == 22:
             idef.MessageDraw(scr, messageFont)
-            if 2 <= timer and timer <= 4:
-                scr.blit(effectImg, [400-timer*60, -100+timer*60])
+            if 2 == timer or timer == 4:
+                scr.fill(idef.COLOR_GREEN)
+                #scr.blit(effectImg, [400-timer*60, -100+timer*60])
 
             if timer == 5:
                 enemyBlink = 5
@@ -327,8 +329,9 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
         # [3] コマンドエフェクト
         elif scene == 23:
             idef.MessageDraw(scr, messageFont)
-            if 2 <= timer and timer <= 4:
-                scr.blit(effectImg, [400-timer*60, -100+timer*60])
+            if 2 == timer or timer == 4:
+                scr.fill(idef.COLOR_ORANGE)
+                #scr.blit(effectImg, [400-timer*60, -100+timer*60])
 
             if timer == 5:
                 enemyBlink = 5
@@ -344,8 +347,9 @@ def BattleMain(scr, clk, user: idef.player, emyNum: int):
         # [4] コマンドエフェクト
         elif scene == 24:
             idef.MessageDraw(scr, messageFont)
-            if 2 <= timer and timer <= 4:
-                scr.blit(effectImg, [400-timer*60, -100+timer*60])
+            if 2 == timer or timer == 4:
+                scr.fill(idef.COLOR_BLUE)
+                #scr.blit(effectImg, [400-timer*60, -100+timer*60])
 
             if timer == 5:
                 enemyBlink = 5

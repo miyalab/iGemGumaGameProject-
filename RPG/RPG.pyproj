@@ -56,6 +56,7 @@
     <Folder Include="sound\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\battle\background\BG16b_80.jpg" />
     <Content Include="img\battle\background\kaidan.jpg" />
     <Content Include="img\battle\background\nakaniwa.jpg" />
     <Content Include="img\battle\background\okujo.jpg" />
