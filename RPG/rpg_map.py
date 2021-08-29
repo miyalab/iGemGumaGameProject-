@@ -629,7 +629,7 @@ def MapMain(bg, clk):
     mapNow = MapLoad(mapNum)
     
     user = idef.player()
-    user.Name = "mizuki"
+    user.Name = "大腸菌"
 
     #-----------------------------------------------------------
     # story 
@@ -937,6 +937,9 @@ def MapMain(bg, clk):
                 elif event == 57:
                     eventState = 570
 
+                elif event == 58:
+                    eventState = 580
+
                 elif event == 71:
                     eventState = 710
 
@@ -961,6 +964,9 @@ def MapMain(bg, clk):
                 elif event == 81:
                     eventState = 810
 
+                elif event == 82:
+                    eventState = 820
+
                 elif event == 90:
                     eventState = 900
 
@@ -976,6 +982,8 @@ def MapMain(bg, clk):
                 elif event == 94:
                     eventState = 940
 
+                elif event == 96:
+                    eventState = 960
 
 
         # select 入力待ち
