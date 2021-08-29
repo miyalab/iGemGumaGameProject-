@@ -56,7 +56,6 @@
     <Folder Include="sound\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\battle\background\btlbg0.png" />
     <Content Include="img\battle\background\kaidan.jpg" />
     <Content Include="img\battle\background\nakaniwa.jpg" />
     <Content Include="img\battle\background\okujo.jpg" />
@@ -64,10 +63,12 @@
     <Content Include="img\battle\background\rouka.png" />
     <Content Include="img\battle\background\toshokan.jpg" />
     <Content Include="img\battle\effect\effect_attack.png" />
+    <Content Include="img\battle\effect\gra_anim_effect_beatJ.gif" />
     <Content Include="img\battle\enemy\enemy1.png" />
     <Content Include="img\battle\enemy\enemy2.png" />
     <Content Include="img\battle\enemy\enemy3.png" />
     <Content Include="img\battle\enemy\enemy4.png" />
+    <Content Include="img\battle\enemy\enemy5.png" />
     <Content Include="img\battle\e_coli100.png" />
     <Content Include="img\map\a100.PNG" />
     <Content Include="img\map\a101.PNG" />
@@ -408,6 +409,7 @@
     <Content Include="img\textbox.100.png" />
     <Content Include="img\textbox.150.png" />
     <Content Include="img\textbox.200.png" />
+    <Content Include="img\opening.png" />
     <Content Include="ipaexg.ttf" />
     <Content Include="sound\ashioto.ogg" />
     <Content Include="sound\op2.ogg" />

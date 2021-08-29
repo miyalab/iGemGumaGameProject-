@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "test", "test\test.pyproj", "{B837830B-5894-45C2-8F81-15C605A3B194}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RPG", "RPG\RPG.pyproj", "{3B21C401-61D9-422B-B18C-0B57B68D157B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageResolutionConverter", "ImageResolutionConverter\ImageResolutionConverter.csproj", "{CB6EBE34-BFE2-4D53-A311-AF9E2B23897F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFlipHorizontal", "ImageFlipHorizontal\ImageFlipHorizontal.csproj", "{36A7FC3B-6E2C-4221-8440-E348185B22C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageSplit", "ImageSplit\ImageSplit.csproj", "{FEA53AB8-FAEF-4F33-92F1-9BBF70E3B174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageOverlap", "ImageOverlap\ImageOverlap.csproj", "{9F4E3B88-9437-4DEA-93EC-64E497D51C6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B837830B-5894-45C2-8F81-15C605A3B194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B837830B-5894-45C2-8F81-15C605A3B194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B21C401-61D9-422B-B18C-0B57B68D157B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B21C401-61D9-422B-B18C-0B57B68D157B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6EBE34-BFE2-4D53-A311-AF9E2B23897F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6EBE34-BFE2-4D53-A311-AF9E2B23897F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6EBE34-BFE2-4D53-A311-AF9E2B23897F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6EBE34-BFE2-4D53-A311-AF9E2B23897F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A7FC3B-6E2C-4221-8440-E348185B22C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A7FC3B-6E2C-4221-8440-E348185B22C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A7FC3B-6E2C-4221-8440-E348185B22C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A7FC3B-6E2C-4221-8440-E348185B22C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA53AB8-FAEF-4F33-92F1-9BBF70E3B174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA53AB8-FAEF-4F33-92F1-9BBF70E3B174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA53AB8-FAEF-4F33-92F1-9BBF70E3B174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA53AB8-FAEF-4F33-92F1-9BBF70E3B174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4E3B88-9437-4DEA-93EC-64E497D51C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4E3B88-9437-4DEA-93EC-64E497D51C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4E3B88-9437-4DEA-93EC-64E497D51C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4E3B88-9437-4DEA-93EC-64E497D51C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4293010A-D695-495C-A153-5A9F1C4C2694}
+	EndGlobalSection
+EndGlobal

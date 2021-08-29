@@ -13,12 +13,14 @@ import pygame
 import pygame.locals
 import random
 
+openingImg = pygame.image.load("img/opening.png")
+
 #----------------------------
 # main program
 #----------------------------
 def main():
     # debug mode select
-    DEBUG_MODE: int = 2
+    DEBUG_MODE: int = 0
     
     # pygame init
     pygame.init()
@@ -39,7 +41,7 @@ def main():
     if DEBUG_MODE == 1:
         print("debug battle")
         user = idef.player()
-        user.Name = "まどか"
+        user.Name = "大腸菌"
         user.Command.append("プラスミド1")
         user.Command.append("プラスミド2")
         user.Command.append("プラスミド3")
@@ -53,7 +55,6 @@ def main():
         print("staff roll check")
         istaff.StaffrollMain(screen, clock)
 
-    scene: int = 0
     while True:
         key = 0
 
@@ -67,19 +68,32 @@ def main():
             # key down event
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.locals.K_UP:
-                    key = key | KEY_UP
+                    key = key | idef.KEY_UP
                 elif event.key == pygame.locals.K_DOWN:
-                    key = key | KEY_DOWN
+                    key = key | idef.KEY_DOWN
                 elif event.key == pygame.locals.K_LEFT:
-                    key = key | KEY_LEFT
+                    key = key | idef.KEY_LEFT
                 elif event.key == pygame.locals.K_RIGHT:
-                    key = key | KEY_RIGHT
+                    key = key | idef.KEY_RIGHT
                 
                 if event.key == pygame.locals.K_SPACE:
-                    key = key | KEY_SELECT
+                    key = key | idef.KEY_SELECT
+
+                if event.key == pygame.locals.K_KP_ENTER or event.key == pygame.locals.K_RETURN:
+                    key = key | idef.KEY_ENTER
 
                 # 連射後のご入力防止
                 pygame.event.clear()
+
+        # enter key 入力まち
+        if key & idef.KEY_ENTER == idef.KEY_ENTER:
+             imap.MapMain(screen, clock)
+        
+        screen.blit(openingImg, [0,0])
+
+        pygame.display.update()
+        clock.tick(33)
+                
 
 
 # メインプログラム実行

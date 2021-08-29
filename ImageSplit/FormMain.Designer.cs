@@ -42,14 +42,15 @@ namespace ImageSplit
             // 
             // numericUpDownWidth
             // 
-            this.numericUpDownWidth.Location = new System.Drawing.Point(271, 41);
+            this.numericUpDownWidth.Location = new System.Drawing.Point(361, 51);
+            this.numericUpDownWidth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownWidth.Maximum = new decimal(new int[] {
             1920,
             0,
             0,
             0});
             this.numericUpDownWidth.Name = "numericUpDownWidth";
-            this.numericUpDownWidth.Size = new System.Drawing.Size(86, 19);
+            this.numericUpDownWidth.Size = new System.Drawing.Size(115, 22);
             this.numericUpDownWidth.TabIndex = 0;
             this.numericUpDownWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericUpDownWidth.Value = new decimal(new int[] {
@@ -60,14 +61,15 @@ namespace ImageSplit
             // 
             // numericUpDownHeight
             // 
-            this.numericUpDownHeight.Location = new System.Drawing.Point(383, 41);
+            this.numericUpDownHeight.Location = new System.Drawing.Point(511, 51);
+            this.numericUpDownHeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownHeight.Maximum = new decimal(new int[] {
             1920,
             0,
             0,
             0});
             this.numericUpDownHeight.Name = "numericUpDownHeight";
-            this.numericUpDownHeight.Size = new System.Drawing.Size(86, 19);
+            this.numericUpDownHeight.Size = new System.Drawing.Size(115, 22);
             this.numericUpDownHeight.TabIndex = 1;
             this.numericUpDownHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericUpDownHeight.Value = new decimal(new int[] {
@@ -80,26 +82,29 @@ namespace ImageSplit
             // 
             this.labelTimes.AutoSize = true;
             this.labelTimes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.labelTimes.Location = new System.Drawing.Point(363, 43);
+            this.labelTimes.Location = new System.Drawing.Point(484, 54);
+            this.labelTimes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTimes.Name = "labelTimes";
-            this.labelTimes.Size = new System.Drawing.Size(15, 15);
+            this.labelTimes.Size = new System.Drawing.Size(18, 18);
             this.labelTimes.TabIndex = 2;
             this.labelTimes.Text = "X";
             // 
             // labelRes
             // 
             this.labelRes.AutoSize = true;
-            this.labelRes.Location = new System.Drawing.Point(224, 45);
+            this.labelRes.Location = new System.Drawing.Point(299, 56);
+            this.labelRes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelRes.Name = "labelRes";
-            this.labelRes.Size = new System.Drawing.Size(41, 12);
+            this.labelRes.Size = new System.Drawing.Size(52, 15);
             this.labelRes.TabIndex = 3;
             this.labelRes.Text = "解像度";
             // 
             // buttonFileOpen
             // 
-            this.buttonFileOpen.Location = new System.Drawing.Point(313, 12);
+            this.buttonFileOpen.Location = new System.Drawing.Point(417, 15);
+            this.buttonFileOpen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonFileOpen.Name = "buttonFileOpen";
-            this.buttonFileOpen.Size = new System.Drawing.Size(75, 23);
+            this.buttonFileOpen.Size = new System.Drawing.Size(100, 29);
             this.buttonFileOpen.TabIndex = 4;
             this.buttonFileOpen.Text = "開く";
             this.buttonFileOpen.UseVisualStyleBackColor = true;
@@ -107,9 +112,10 @@ namespace ImageSplit
             // 
             // buttonConverter
             // 
-            this.buttonConverter.Location = new System.Drawing.Point(394, 12);
+            this.buttonConverter.Location = new System.Drawing.Point(525, 15);
+            this.buttonConverter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonConverter.Name = "buttonConverter";
-            this.buttonConverter.Size = new System.Drawing.Size(75, 23);
+            this.buttonConverter.Size = new System.Drawing.Size(100, 29);
             this.buttonConverter.TabIndex = 5;
             this.buttonConverter.Text = "変換";
             this.buttonConverter.UseVisualStyleBackColor = true;
@@ -117,19 +123,21 @@ namespace ImageSplit
             // 
             // textBoxLog
             // 
-            this.textBoxLog.Location = new System.Drawing.Point(12, 66);
+            this.textBoxLog.Location = new System.Drawing.Point(16, 82);
+            this.textBoxLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxLog.Multiline = true;
             this.textBoxLog.Name = "textBoxLog";
             this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLog.Size = new System.Drawing.Size(457, 372);
+            this.textBoxLog.Size = new System.Drawing.Size(608, 464);
             this.textBoxLog.TabIndex = 6;
+            this.textBoxLog.TextChanged += new System.EventHandler(this.textBoxLog_TextChanged);
             // 
             // FormMain
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 450);
+            this.ClientSize = new System.Drawing.Size(640, 562);
             this.Controls.Add(this.textBoxLog);
             this.Controls.Add(this.buttonConverter);
             this.Controls.Add(this.buttonFileOpen);
@@ -138,6 +146,7 @@ namespace ImageSplit
             this.Controls.Add(this.numericUpDownHeight);
             this.Controls.Add(this.numericUpDownWidth);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMain";
             this.Text = "画像分割";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.FormMain_DragDrop);

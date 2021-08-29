@@ -8,3 +8,13 @@ C:\Users\miyak\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj
 C:\Users\miyak\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.csproj.CoreCompileInputs.cache
 C:\Users\miyak\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.exe
 C:\Users\miyak\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.pdb
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\bin\Debug\ImageResolutionConverter.exe.config
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\bin\Debug\ImageResolutionConverter.exe
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\bin\Debug\ImageResolutionConverter.pdb
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.csprojAssemblyReference.cache
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.FormMain.resources
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.Properties.Resources.resources
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.csproj.GenerateResource.cache
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.csproj.CoreCompileInputs.cache
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.exe
+C:\Users\みずき\Documents\GitHub\iGemGumaGameProject\ImageResolutionConverter\obj\Debug\ImageResolutionConverter.pdb

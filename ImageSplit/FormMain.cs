@@ -137,5 +137,10 @@ namespace ImageSplit
                 }
             }
         }
+
+        private void textBoxLog_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
